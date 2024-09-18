@@ -5,7 +5,7 @@ on:
     branches: [master] # Ensures the workflow triggers on pushes to master
 
   schedule:
-    - cron: '0 */12 * * *' # Executes every 12 hours
+    - cron: '*/12 * * * *' # Executes every 12 hours
 
   workflow_dispatch: # Allows manual triggering from the GitHub UI
 
@@ -33,8 +33,8 @@ jobs:
 
       - name: Setup Git Configuration
         run: |
-          git config user.email "rxmxdhxni@gmail.com"
-          git config user.name "dante4rt"
+          git config user.email "usermailforwarding@gmail.com"
+          git config user.name "recitativonika"
 
       - name: Prepare Commit
         run: |
